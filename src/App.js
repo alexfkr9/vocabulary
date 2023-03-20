@@ -17,13 +17,14 @@ function App() {
 
   function resetStorage() {
     localStorage.removeItem("saveLocal");
+    setCards(data);
   }
 
   return (
     <div className="App">
       <div className="header-tab">
         <h3>Dictionary</h3>
-        <button onClick={resetStorage()}>Reset</button>
+        <button onClick={resetStorage}>Reset</button>
       </div>
       <table>
         <tbody>
